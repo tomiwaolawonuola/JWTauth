@@ -1,0 +1,23 @@
+
+
+    <link rel="stylesheet" href="/style.css">
+    <div class="topnav">
+        <% if(user) { %>
+        <li>welcome, <%=user.name%>
+        </li>
+        <a href="/logout">Logout</a>
+        <% } else { %>
+            <a class="active" href="/">Home</a>
+            <a href="/signup">Sign Up</a>
+            <a href="/signin">Sign In</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+       <%}%>
+        
+        
+    </div>
+
+
+
+
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="/styles.css">
+    <title>SignUp</title>
+</head>
+<body>
+        <%-include('./partials/nav.ejs')%>
+ 
+    <div class="form-container">
+     <form id="signup-form">
+  <h1>Sign up</h1><br/>
+  <input type="text"  name="name" placeholder="name" id="name" required/>
+  <span class="error name"></span>
+  <br>
+  <input type="email"  name="email"   placeholder="Email address" required id="email"/>
+  <span class="error email"></span>
+  <br>
+  <input type="password"  name="password" placeholder="Password" required id="password"/>
+    <span class="error  password"></span>
+    <br>
+  <button>Sign up</button>
+</form> 
+   </div>
+
+   <div class="signin">
+        <p>or</p>
+      <a href="/signin">Sign In</a>
+   </div>
+  
+
+</body>
+
+
+  <script  src="/signup.js"></script>
+</html>
+
